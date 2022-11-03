@@ -2,7 +2,7 @@ import { ArgumentsHost, Catch, ExceptionFilter, HttpException, HttpStatus, Logge
 /*import { error } from "console";*/
 @Catch()
 export class AllExceptionFilter implements ExceptionFilter {
-    private readonly logger = new Logger = new Logger(AllExceptionFilter.name)
+    private readonly logger = new Logger(AllExceptionFilter.name)
     catch(exception: any, host: ArgumentsHost) {
         const ctx = host.switchToHttp();
         const response = ctx.getResponse();
